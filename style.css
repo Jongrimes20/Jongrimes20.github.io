@@ -57,6 +57,10 @@ section {
     padding-top: 150px;
 }
 
+.headshot {
+    clip-path: circle(100px at center);
+}
+
 .intro h2 {
     font-size: 48px;
     margin-bottom: 20px;
