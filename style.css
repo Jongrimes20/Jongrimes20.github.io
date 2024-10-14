@@ -51,6 +51,10 @@ section {
     padding: 100px 0;
 }
 
+.resume-download-link {
+    color: #ffffff;
+}
+
 .intro {
     background: linear-gradient(45deg, #1c1c1e, #012a4a);
     text-align: center;
