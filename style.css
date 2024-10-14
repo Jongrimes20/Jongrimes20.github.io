@@ -97,6 +97,94 @@ footer {
     vertical-align: middle;
 }
 
+/* Projects Section */
+.project-display {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.project-card {
+    display: none;
+    background-color: #1c1c1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+}
+
+.project-card.active {
+    display: block;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+.nav-btn:hover {
+    color: #777;
+}
+
+.left-btn {
+    position: absolute;
+    left: -60px;
+}
+
+.right-btn {
+    position: absolute;
+    right: -60px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-btn {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .left-btn, .right-btn {
+        left: 10px;
+        right: 10px;
+    }
+
+    .project-card-container {
+        max-width: 100%;
+    }
+}
+
+
+
 
 @media (max-width: 768px) {
     nav ul {

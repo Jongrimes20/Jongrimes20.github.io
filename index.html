@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Jon Grimes - Resume</title>
@@ -7,6 +8,7 @@
     <!-- fontawesome kit -->
     <script src="https://kit.fontawesome.com/d16b228cf5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <div class="container">
@@ -14,8 +16,10 @@
             <ul>
                 <!-- Email, GitHub, and LinkedIn Links -->
                 <li><a href="mailto:jfg220000@utdallas.edu"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://github.com/jongrimes20" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://linkedin.com/in/jon-grimes-579095213" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/jongrimes20" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li><a href="https://linkedin.com/in/jon-grimes-579095213" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -36,8 +40,10 @@
         <div class="container">
             <h2>Skills</h2>
             <ul>
-                <li><strong>Swift:</strong> SwiftUI, UIKit, CreateML, CoreML, TabularData, Combine, Vision, AVKit, CloudKit, XCTest, XCode Developer Tools</li>
-                <li><strong>Other:</strong> Objective C, HTML, CSS, JavaScript, Node.JS, SQL(MySQL, SQLite), Docker, Kubernetes, Shell Scripts, Git</li>
+                <li><strong>Swift:</strong> SwiftUI, UIKit, CreateML, CoreML, TabularData, Combine, Vision, AVKit,
+                    CloudKit, XCTest, XCode Developer Tools</li>
+                <li><strong>Other:</strong> Objective C, HTML, CSS, JavaScript, Node.JS, SQL(MySQL, SQLite), Docker,
+                    Kubernetes, Shell Scripts, Git</li>
             </ul>
         </div>
     </section>
@@ -51,8 +57,10 @@
             <ul>
                 <li>Designed, created, and managed code for Apple's applications and systems.</li>
                 <li>Maintained and improved internal tools to help other developers.</li>
-                <li>Produced efficient, elegant code and improved existing software through troubleshooting and debugging.</li>
-                <li>Participated in multiple rounds of AQS testing to verify CreateML was ready to deploy on the latest OS.</li>
+                <li>Produced efficient, elegant code and improved existing software through troubleshooting and
+                    debugging.</li>
+                <li>Participated in multiple rounds of AQS testing to verify CreateML was ready to deploy on the latest
+                    OS.</li>
             </ul>
         </div>
     </section>
@@ -61,24 +69,51 @@
     <section class="projects">
         <div class="container">
             <h2>Projects</h2>
-            <h3>CreateML On-Device Tester App</h3>
-            <ul>
-                <li>Upgraded and optimized an iOS application for testing on-device machine learning model training, ensuring compatibility from iOS 15 to iOS 18.</li>
-                <li>Enabled continuous verification of on-device training capabilities for each beta release of iOS, enhancing quality assurance efficiency.</li>
-            </ul>
-            <h3>MLS Stat Tracker</h3>
-            <ul>
-                <li>Designed and prototyped a series of machine learning models for real-time statistical tracking of live MLS games.</li>
-                <li>Leveraged action classifiers and object detection to accurately monitor and record game events.</li>
-            </ul>
-            <h3>Zircon</h3>
-            <ul>
-                <li>Architected and deployed a blob storage server using Docker, Kubernetes, and Rio, streamlining internal dataset management for Machine Learning Engineers.</li>
-                <li>Established a dedicated Kubernetes staging environment for integration testing, enhancing deployment reliability and reducing production issues.</li>
-                <li>Developed Rio pipelines for automated alerts on failed integration tests, improving team response time and preventing breaking changes from reaching production.</li>
-            </ul>
+            <div class="project-display">
+                <!-- Left Navigation Button -->
+                <button class="nav-btn left-btn" onclick="navigateProjects('left')">&#10094;</button>
+                <!-- Project Cards -->
+                <div class="project-card-container">
+                    <!-- Project Card 1 -->
+                    <div class="project-card active">
+                        <h3>CreateML On-Device Tester App</h3>
+                        <ul>
+                            <li>Upgraded and optimized an iOS application for testing on-device machine learning model
+                                training, ensuring compatibility from iOS 15 to iOS 18.</li>
+                            <li>Enabled continuous verification of on-device training capabilities for each beta release
+                                of iOS, enhancing quality assurance efficiency.</li>
+                        </ul>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <h3>MLS Stat Tracker</h3>
+                        <ul>
+                            <li>Designed and prototyped a series of machine learning models for real-time statistical
+                                tracking of live MLS games.</li>
+                            <li>Leveraged action classifiers and object detection to accurately monitor and record game
+                                events.</li>
+                        </ul>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <h3>Zircon</h3>
+                        <ul>
+                            <li>Architected and deployed a blob storage server using Docker, Kubernetes, and Rio,
+                                streamlining internal dataset management for Machine Learning Engineers.</li>
+                            <li>Established a dedicated Kubernetes staging environment for integration testing,
+                                enhancing deployment reliability and reducing production issues.</li>
+                            <li>Developed Rio pipelines for automated alerts on failed integration tests, improving team
+                                response time and preventing breaking changes from reaching production.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right Navigation Button -->
+                <button class="nav-btn right-btn" onclick="navigateProjects('right')">&#10095;</button>
+            </div>
         </div>
     </section>
+
+
 
     <!-- Education -->
     <section class="education">
@@ -98,4 +133,5 @@
     <!-- Link JS File -->
     <script src="script.js"></script>
 </body>
+
 </html>
