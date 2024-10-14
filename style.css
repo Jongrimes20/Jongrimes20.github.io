@@ -66,13 +66,18 @@ section {
     margin-bottom: 20px;
 }
 
-.skills ul, .experience ul, .projects ul {
+.skills ul, .projects ul {
     list-style: none;
     padding: 0;
 }
 
 .skills li, .experience li, .projects li {
     margin-bottom: 10px;
+}
+
+.experience ul {
+    list-style: disc inside;
+    padding-left: 0;
 }
 
 h2 {
